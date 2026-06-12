@@ -278,3 +278,94 @@ Reviewed the generated tests to confirm they check:
 ### Reflection
 
 Generating tests with Copilot helped verify that the Creative Agent consistently returns well-structured project ideas. The tests also improved confidence that the agent can be safely integrated into the Streamlit application while maintaining a predictable output format.
+
+## Task 8 - Documentation Agent
+
+### File
+
+agents/documentation_agent.py
+
+### Copilot Interaction Method
+
+Plan Mode
+
+### Objective
+
+Generate documentation recommendations for a project goal.
+
+### Prompting Strategy
+
+Used:
+
+* project context
+* structured output requirements
+* type hint requirements
+* implementation constraints
+* documentation-focused categories
+
+### Outcome
+
+Generated a documentation_agent(goal) function that:
+
+* accepts a user goal
+* validates input
+* returns documentation recommendations
+* organizes suggestions into:
+
+  * readme
+  * architecture
+  * testing
+  * references
+* includes type hints and documentation
+
+### Human Review
+
+Reviewed the generated code and verified that:
+
+* output structure is consistent
+* documentation categories are relevant
+* implementation remains deterministic and testable
+* code follows the same style as the other agents
+
+### Reflection
+
+Creating a dedicated Documentation Agent reinforces the project's focus on structured development and knowledge sharing. The output can be used directly to guide README creation and future project documentation.
+
+## Task 9 - Documentation Agent Unit Tests
+
+### File
+
+tests/test_documentation_agent.py
+
+### Copilot Interaction Method
+
+Generate Unit Tests
+
+### Objective
+
+Use GitHub Copilot to generate unit tests for the documentation_agent() function.
+
+### Testing Framework
+
+pytest
+
+### Human Review
+
+Reviewed the generated tests to confirm they check:
+
+* output type
+* required top-level keys:
+
+  * readme
+  * architecture
+  * testing
+  * references
+* each value is a list
+* documentation sections are returned in the expected format
+* empty string handling
+* TypeError behavior for non-string inputs
+* output structure consistency
+
+### Reflection
+
+Generating tests with Copilot helped verify that the Documentation Agent consistently returns structured documentation recommendations. The tests also improved confidence that the agent can be integrated into the Streamlit application while maintaining a predictable and reusable output format.
