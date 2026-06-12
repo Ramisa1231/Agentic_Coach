@@ -24,6 +24,23 @@
 * Code Suggestions and Completions
   https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/completions/code-suggestions
 
+## GitHub Copilot Diagram Generation
+
+* Creating Diagrams with GitHub Copilot
+  https://docs.github.com/en/copilot/tutorials/copilot-cookbook/communicate-effectively/creating-diagrams
+
+  Used to generate Mermaid-based architecture diagrams and improve project documentation for Agentic Coach.
+
+* Mermaid Diagramming Framework
+  https://github.com/mermaid-js/mermaid
+
+  Open-source diagramming tool used to create architecture diagrams as code.
+
+## Architecture Documentation
+
+The Agentic Coach architecture diagram was generated using GitHub Copilot and Mermaid syntax following GitHub's recommended workflow for AI-assisted diagram generation and documentation.
+
+
 ## O'Reilly Learning Resources
 
 * Building AI Agents with LLMs, RAG, and Knowledge Graphs
