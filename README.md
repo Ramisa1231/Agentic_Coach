@@ -22,6 +22,13 @@ Agentic Coach is an AI-assisted learning and project coaching application being 
 
 This project follows GitHub Copilot prompt engineering and AI-assisted development practices.
 
+## Documentation
+
+- Architecture: docs/architecture.md
+- Hackathon Journal: docs/hackathon-journal.md
+- Copilot Usage: docs/copilot-usage.md
+- References: docs/references.md
+
 ## References
 
 See docs/references.md
