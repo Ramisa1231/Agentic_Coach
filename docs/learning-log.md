@@ -85,7 +85,93 @@ Reviewed the generated code and verified that:
 
 Providing context and output requirements resulted in a useful first implementation with minimal modifications.
 
-## Task 3 - Resource Agent Unit Tests
+## Task 3 - Planner Agent Unit Tests
+
+### File
+
+tests/test_planner_agent.py
+
+### Copilot Interaction Method
+
+Generate Unit Tests
+
+### Objective
+
+Use GitHub Copilot to generate unit tests for the planner_agent() function.
+
+### Testing Framework
+
+pytest
+
+### Human Review
+
+Reviewed the generated tests to confirm they check:
+
+* output type
+* number of returned learning steps
+* empty string handling
+* TypeError behavior
+* roadmap structure consistency
+
+### Reflection
+
+Generating tests with Copilot helped validate the planner agent's behavior and demonstrated an AI-assisted testing workflow in addition to AI-assisted code generation.
+
+## Task 4 - Resource Agent
+
+### File
+
+agents/resource_agent.py
+
+### Copilot Interaction Method
+
+Plan Mode
+
+### Objective
+
+Generate a curated learning resource recommendation agent.
+
+### Prompting Strategy
+
+Used:
+
+* project context
+* structured output requirements
+* specific resource URLs
+* type hint requirements
+* implementation constraints
+* explicit resource list
+* exact URL preservation requirements
+
+### Outcome
+
+Generated a resource_agent(goal) function that:
+
+* accepts a user goal
+* validates input
+* returns structured resource recommendations
+* includes title, source, url, reason, and how_to_use fields
+* incorporates Microsoft Learn, GitHub Copilot, Agents League, and O'Reilly resources
+* uses type hints and documentation
+
+### Human Review
+
+Reviewed generated links and updated them to use project-specific resources, including:
+
+* Microsoft Learn Collection
+* Microsoft Learn Profile
+* Microsoft Agents League Creative Apps Starter Kit
+* GitHub Copilot Prompt Engineering Documentation
+* GitHub Copilot Code Suggestions Documentation
+* Microsoft Learn Copilot Interaction Module
+* O'Reilly AI Agents, RAG, and Knowledge Graphs resources
+
+### Reflection
+
+Providing explicit resources and exact URLs significantly improved the relevance and quality of Copilot-generated recommendations. The structured dictionary output is well suited for future integration with the Streamlit user interface.
+
+
+## Task 5 - Resource Agent Unit Tests
 
 ### Copilot Interaction Method
 Generate Unit Tests
@@ -101,3 +187,56 @@ Reviewed the generated tests to confirm they check output type, required keys, U
 
 ### Reflection
 Added automated tests for the Resource Agent.
+
+## Task 5 - Creative Agent
+
+### File
+
+agents/creative_agent.py
+
+### Copilot Interaction Method
+
+Plan Mode
+
+### Objective
+
+Generate creative project ideas based on a user's learning or project goal.
+
+### Prompting Strategy
+
+Used:
+
+* project context
+* clear agent purpose
+* structured output requirements
+* type hint requirements
+* implementation constraints (no APIs, no LLM calls)
+
+### Outcome
+
+Generated a creative_agent(goal) function that:
+
+* accepts a user goal
+* validates input
+* returns exactly three project ideas
+* structures each idea using:
+
+  * title
+  * problem
+  * solution
+  * why_it_is_creative
+* includes type hints and documentation
+
+### Human Review
+
+Reviewed the generated code and verified that:
+
+* output format is consistent across all ideas
+* ideas are relevant to the user's goal
+* implementation remains deterministic and testable
+* code follows the same style as Planner Agent and Resource Agent
+
+### Reflection
+
+Providing clear output requirements resulted in a reusable and well-structured agent. The dictionary-based output will be easy to display in the Streamlit interface and can be expanded later with more personalized idea generation logic.
+
