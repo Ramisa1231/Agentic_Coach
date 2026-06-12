@@ -392,3 +392,38 @@ Successfully gained access to Innovation Studio after account onboarding was com
 ### Reflection
 
 The issue was related to account provisioning rather than local configuration. Persistence and systematic troubleshooting helped identify the root cause.
+
+## Task 11 - Architecture Documentation
+
+### File
+
+docs/architecture.md
+
+### Copilot Interaction Method
+
+Chat Mode
+
+### Objective
+
+Generate a Mermaid architecture diagram for Agentic Coach.
+
+### Prompting Strategy
+
+Used:
+
+* project context
+* component descriptions
+* architecture requirements
+* Mermaid diagram constraints
+
+### Outcome
+
+Generated a Mermaid flowchart visualizing the interaction between the user, Streamlit interface, and the four specialized agents.
+
+### Human Review
+
+Reviewed the generated diagram and verified that it accurately reflects the implemented architecture.
+
+### Reflection
+
+Using Copilot to generate architecture diagrams improved documentation quality and provided a visual representation of the agent workflow.
