@@ -1,7 +1,27 @@
-# Agentic_Coach
+# Agentic Coach
 
 🚧 Work in Progress
 
-This project is being developed for Microsoft's Agents League Battle #1: Creative Apps.
+Agentic Coach is an AI-assisted learning and project coaching application being developed for Microsoft's Agents League Battle #1: Creative Apps.
 
-Development is being documented throughout the hackathon, including GitHub Copilot usage, prompting strategies, architecture decisions, and learning resources.
+## Objectives
+
+- Generate learning roadmaps
+- Recommend learning resources
+- Suggest creative project ideas
+- Generate project documentation
+
+## Technology Stack
+
+- Python
+- Streamlit
+- GitHub Copilot
+- Visual Studio Code
+
+## Development Approach
+
+This project follows GitHub Copilot prompt engineering and AI-assisted development practices.
+
+## References
+
+See docs/references.md
