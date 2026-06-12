@@ -188,7 +188,7 @@ Reviewed the generated tests to confirm they check output type, required keys, U
 ### Reflection
 Added automated tests for the Resource Agent.
 
-## Task 5 - Creative Agent
+## Task 6 - Creative Agent
 
 ### File
 
@@ -240,3 +240,41 @@ Reviewed the generated code and verified that:
 
 Providing clear output requirements resulted in a reusable and well-structured agent. The dictionary-based output will be easy to display in the Streamlit interface and can be expanded later with more personalized idea generation logic.
 
+## Task 7 - Creative Agent Unit Tests
+
+### File
+
+tests/test_creative_agent.py
+
+### Copilot Interaction Method
+
+Generate Unit Tests
+
+### Objective
+
+Use GitHub Copilot to generate unit tests for the creative_agent() function.
+
+### Testing Framework
+
+pytest
+
+### Human Review
+
+Reviewed the generated tests to confirm they check:
+
+* output type
+* exactly three project ideas are returned
+* each idea is a dictionary
+* required fields are present:
+
+  * title
+  * problem
+  * solution
+  * why_it_is_creative
+* empty string handling
+* TypeError behavior for non-string inputs
+* output structure consistency across all ideas
+
+### Reflection
+
+Generating tests with Copilot helped verify that the Creative Agent consistently returns well-structured project ideas. The tests also improved confidence that the agent can be safely integrated into the Streamlit application while maintaining a predictable output format.
