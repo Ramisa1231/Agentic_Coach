@@ -99,5 +99,5 @@ pytest
 ### Human Review
 Reviewed the generated tests to confirm they check output type, required keys, URLs, empty input handling, and TypeError behavior.
 
-### Result
+### Reflection
 Added automated tests for the Resource Agent.
