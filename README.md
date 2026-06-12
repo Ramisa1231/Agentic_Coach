@@ -28,6 +28,12 @@ Generated sections:
 3. Creative Project Ideas
 4. Documentation Suggestions
 
+### Demo GIF
+
+![Agentic Coach demo](screenshots/agentic_demo.gif)
+
+A short animated demo of the Streamlit UI showing the Learning Roadmap, Recommended Resources, Creative Project Ideas, and Documentation Suggestions sections.
+
 ## Agent Workflow
 
 ```text
@@ -43,6 +49,26 @@ Documentation Agent
 ↓
 Streamlit Interface
 ```
+
+## Architecture
+
+```mermaid
+flowchart LR
+	user["User\n(enter goal)"] --> app["Streamlit UI\n(app.py)"]
+	app --> planner["Planner Agent\n(planner_agent)"]
+	app --> resource["Resource Agent\n(resource_agent)"]
+	app --> creative["Creative Agent\n(creative_agent)"]
+	app --> docs["Documentation Agent\n(documentation_agent)"]
+
+	planner --> app
+	resource --> app
+	creative --> app
+	docs --> app
+
+	app --> output["Streamlit Output\n(roadmap, resources, ideas, docs)"]
+```
+
+A user types a short learning or project goal into the Streamlit UI; the app calls each agent with the same goal string. Each agent returns deterministic, display-ready data which the app renders inside expandable sections for the user to read, copy, or act on. See [docs/architecture.md](docs/architecture.md) for a more detailed diagram and explanation.
 
 ## Agents
 
