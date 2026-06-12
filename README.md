@@ -1,4 +1,7 @@
 # Agentic_Coach
-Starter Streamlit hackathon project scaffold.
-# Agentic_Coach
-This project is part of the Creative Apps Battle Hackathon 2026 by Microsoft Reactor
+
+🚧 Work in Progress
+
+This project is being developed for Microsoft's Agents League Battle #1: Creative Apps.
+
+Development is being documented throughout the hackathon, including GitHub Copilot usage, prompting strategies, architecture decisions, and learning resources.
