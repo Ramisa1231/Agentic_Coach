@@ -369,3 +369,26 @@ Reviewed the generated tests to confirm they check:
 ### Reflection
 
 Generating tests with Copilot helped verify that the Documentation Agent consistently returns structured documentation recommendations. The tests also improved confidence that the agent can be integrated into the Streamlit application while maintaining a predictable and reusable output format.
+
+## Task 10 - Innovation Studio Access
+
+### Objective
+
+Gain access to the Microsoft Innovation Studio platform for the Agents League Hackathon.
+
+### Actions Taken
+
+- Registered for the hackathon
+- Created a Microsoft account linked to Gmail
+- Configured Microsoft Authenticator
+- Contacted Microsoft Reactor
+- Contacted the Agents League team
+- Tested authentication using private browser sessions
+
+### Outcome
+
+Successfully gained access to Innovation Studio after account onboarding was completed.
+
+### Reflection
+
+The issue was related to account provisioning rather than local configuration. Persistence and systematic troubleshooting helped identify the root cause.
