@@ -84,3 +84,20 @@ Reviewed the generated code and verified that:
 ### Reflection
 
 Providing context and output requirements resulted in a useful first implementation with minimal modifications.
+
+## Task 3 - Resource Agent Unit Tests
+
+### Copilot Interaction Method
+Generate Unit Tests
+
+### Objective
+Use GitHub Copilot to generate unit tests for the resource_agent() function.
+
+### Testing Framework
+pytest
+
+### Human Review
+Reviewed the generated tests to confirm they check output type, required keys, URLs, empty input handling, and TypeError behavior.
+
+### Result
+Added automated tests for the Resource Agent.
